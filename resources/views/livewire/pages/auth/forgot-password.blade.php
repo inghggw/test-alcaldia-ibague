@@ -56,6 +56,12 @@ new #[Layout('layouts.guest')] class extends Component
             <x-primary-button>
                 {{ __('Email Password Reset Link') }}
             </x-primary-button>
+
+            <a href="/" wire:navigate>
+                <x-secondary-button class="ms-3" type="button">
+                    {{ __('Return') }}
+                </x-secondary-button>
+            </a>
         </div>
     </form>
 </div>
