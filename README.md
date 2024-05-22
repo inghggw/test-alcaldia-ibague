@@ -49,6 +49,8 @@
     - Autenticación con Breeze.
     - FrontEnd con Livewire y Tailwind.
     - Paquete de i18n para multilenguaje.
+    - Paquete Datatables (RappaSoft) para Livewire.
+    - Paquete Fontawesome para los iconos.
 
 ## Autor
 

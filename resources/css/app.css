@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .max-h-webkit-fill {
-	max-height: -webkit-fill-available;
+    max-height: -webkit-fill-available;
 }
