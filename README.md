@@ -56,6 +56,12 @@
     - Paquete Fontawesome para los iconos.
     - Factorys para crear data fake y ver la páginación en Departamentos.
 
+### Pruebas unitarias:
+
+    - Ejecutar las pruebas unitarias: php artisan test
+    - Se realizaron 35 test y 126 assertions.
+  - [Screenshot from 2024-05-23 00-04-38](https://github.com/inghggw/test-alcaldia-ibague/assets/5940404/ddd8474f-5c70-4411-b7cf-38c8630f50dd)
+
 ### Demo:
 
 [demo.webm](https://github.com/inghggw/test-alcaldia-ibague/assets/5940404/33c0b424-1e0a-40f0-a9da-d87b40a8570b)
