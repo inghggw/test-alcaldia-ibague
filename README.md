@@ -42,6 +42,9 @@
 -   En el navegador ingresar a la url:
     -   `http://localhost:8000`
 
+-   Se puede registrar o usar este usuario de prueba:
+    -   Correo: admin@mail.com
+    -   Contraseña: 12345678
 ---
 
 ### Herramientas aplicadas:
@@ -51,6 +54,11 @@
     - Paquete de i18n para multilenguaje.
     - Paquete Datatables (RappaSoft) para Livewire.
     - Paquete Fontawesome para los iconos.
+    - Factorys para crear data fake y ver la páginación en Departamentos.
+
+### Demo:
+
+[demo.webm](https://github.com/inghggw/test-alcaldia-ibague/assets/5940404/33c0b424-1e0a-40f0-a9da-d87b40a8570b)
 
 ## Autor
 

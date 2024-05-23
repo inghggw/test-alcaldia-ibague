@@ -11,7 +11,7 @@ class DepartamentoForm extends Component
     public $id, $nombre, $codigo;
 
     /**
-     * Rederizar la vista del componente
+     * Renderizar la vista del componente
      *
      * @return void
      */
@@ -93,7 +93,15 @@ class DepartamentoForm extends Component
      */
     public function delete($id)
     {
-        Departamento::findOrFail($id)->delete();
+        $departamento = Departamento::findOrFail($id);
+
+        // Verificar si el departamento tiene empleados
+        if ($departamento->empleados()->count() > 0) {
+            Session::flash('error', 'No se puede eliminar el departamento porque tiene empleados asociados');
+            return;
+        }
+
+        $departamento->delete();
 
         Session::flash('success', 'Se eliminó el departamento correctamente');
 

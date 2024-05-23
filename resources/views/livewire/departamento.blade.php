@@ -6,7 +6,7 @@
         </div>
 
         <div class="mb-4 sm:w-1/2 sm:pr-2">
-            <x-input name="codigo" label="Código" required />
+            <x-input name="codigo" label="Código" type="number" required />
         </div>
     </div>
 

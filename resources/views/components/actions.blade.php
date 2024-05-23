@@ -43,6 +43,37 @@
     </div>
 @endif
 
+@if (session()->has('error'))
+    <div x-data="{ show: true }">
+        <x-dialog-modal id="errorModal">
+
+            <x-slot name="title">
+                <div class="sm:flex sm:items-center">
+                    <div
+                        class="shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-red-700 sm:mx-0 sm:h-10 sm:w-10 sm:me-2">
+                        <i class="fa-solid fa-circle-exclamation text-red-600"></i>
+                    </div>
+                    <div>
+                        Atención
+                    </div>
+
+                </div>
+            </x-slot>
+
+            <x-slot name="content">
+                {{ session('error') }}
+            </x-slot>
+
+            <x-slot name="footer">
+                <button x-on:click="show = false"
+                    class="bg-verde hover:bg-red-700 text-white font-bold py-2 px-4 rounded mr-2"
+                    type="button">Aceptar</button>
+            </x-slot>
+
+        </x-dialog-modal>
+    </div>
+@endif
+
 @if ($errors->any())
     <div x-data="{ show: true }">
         <x-dialog-modal id="errorModal">
