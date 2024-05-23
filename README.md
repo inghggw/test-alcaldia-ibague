@@ -15,7 +15,10 @@
 
 ## Pasos iniciales:
 
--   Cambiar variables de conexión MySQL o MariaDB en el archivo `/.env`
+-   Cambiar variables de conexión MySQL o MariaDB en el archivo `/.env`:
+    -   DB_PORT
+    -   DB_USERNAME
+    -   DB_PASSWORD
 
 -   Ejecutar script `DATABASE.sql` en el mysql local para crear la base de datos.
 
